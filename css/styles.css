@@ -1,5 +1,6 @@
 * {
     margin: 3px;
+    font-size: 1.1rem;
 }
 body {
     background-color: rgb(112, 162, 136);
@@ -17,10 +18,11 @@ form {
     align-items: center;
 }
 input {
-    width: 190px;
+    width: 200px;
+
 }
 select {
-    width: 115px;
+    width: 155px;
 }
 button {
     height: 2em;

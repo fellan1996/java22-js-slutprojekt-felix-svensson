@@ -116,7 +116,7 @@ function showErrorTextInputWasNull() {
     textErrorP.innerText = errorMessage;
     textInput.before(textErrorP);
     textErrorP.id = 'error-search-bar';
-    textErrorP.style.fontSize = `${0.5 + 0.1 * counterForTextErrorSize}em`;
+    textErrorP.style.fontSize = `${0.65 + 0.1 * counterForTextErrorSize}em`;
     textErrorP.style.color = '#970505';
     counterForTextErrorSize++;
 }
@@ -127,7 +127,7 @@ function showErrorWrongAmount() {
 
     const NumErrorP = document.createElement('p');
     NumErrorP.id = 'error-number';
-    NumErrorP.style.cssText = "font-size: 0.5rem; margin: 0.6em 0.1em 0 0.5em;";
+    NumErrorP.style.cssText = "font-size: 0.7rem; margin: 0.6em 0.1em 0 0.5em;";
     if (parseInt(numInput.value) > 500) {
         numInput.style.color = 'red';
         numInput.before(NumErrorP);
