@@ -39,6 +39,7 @@ button {
     border: 2px ridge gray;
     min-width: 80%;
     min-height: 10em;
+    font-weight: 600;
 }
 a {
     border-top: 1px ridge rgb(4, 57, 94);
