@@ -1,0 +1,56 @@
+* {
+    margin: 3px;
+}
+body {
+    background-color: rgb(112, 162, 136);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+form {
+    padding: 1em;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+    align-items: center;
+}
+input {
+    width: 190px;
+}
+select {
+    width: 115px;
+}
+button {
+    height: 2em;
+    width: 8em;
+}
+
+
+#img-or-error-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background: rgb(4, 57, 94);
+    margin: 10px;
+    border: 2px ridge gray;
+    min-width: 80%;
+    min-height: 10em;
+}
+a {
+    border-top: 1px ridge rgb(4, 57, 94);
+    border-right: 2px solid rgb(4, 57, 94);
+    border-bottom: 2px solid rgb(4, 57, 94);
+    border-left: 1px ridge rgb(4, 57, 94);
+}
+a:hover {
+    border-right: 2px ridge rgb(4, 48, 80);
+    border-bottom: 2px ridge rgb(4, 48, 80);
+    border-top: 1px ridge rgb(4, 48, 80);
+    border-left: 1px ridge rgb(4, 48, 80);
+    
+}
+img {
+    border: 2px ridge #503d2b;
+}
