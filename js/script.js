@@ -59,7 +59,7 @@ function getData(dataObj) {
 
     if (photoArr.length === 0) {
         showErrorNoImg()
-    } else if (photoArr.length < numInput.value && photoArr.length <= 500) {
+    } else if (photoArr.length < numInput.value && photoArr.length < 500) {
         showErrorNotEnoughImages(photoArr.length);
         displayImages(photoArr);
     } else {
