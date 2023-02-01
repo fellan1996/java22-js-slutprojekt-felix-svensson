@@ -125,19 +125,19 @@ function showErrorWrongAmount() {
     const temporaryP = document.getElementById('error-number');
     temporaryP != null ? temporaryP.remove() : '';
 
-    const NumErrorP = document.createElement('p');
-    NumErrorP.id = 'error-number';
-    NumErrorP.style.cssText = "font-size: 0.7rem; margin: 0.6em 0.1em 0 0.5em;";
+    const numErrorP = document.createElement('p');
+    numErrorP.id = 'error-number';
+    numErrorP.style.cssText = "font-size: 0.7rem; margin: 0.6em 0.1em 0 0.5em;";
     if (parseInt(numInput.value) > 500) {
         numInput.style.color = 'red';
-        numInput.before(NumErrorP);
-        NumErrorP.innerText = 'easy there tiger! no need to go above 500';
+        numInput.before(numErrorP);
+        numErrorP.innerText = 'easy there tiger! no need to go above 500';
     } else if (parseInt(numInput.value) < 0) {
-        NumErrorP.innerText = 'Ummm... whatcha doin? Pump that number up!';
+        numErrorP.innerText = 'Ummm... whatcha doin? Pump that number up!';
         numInput.style.color = 'red';
-        numInput.before(NumErrorP);
+        numInput.before(numErrorP);
     } else {
-        NumErrorP.innerText = '';
+        numErrorP.innerText = '';
         numInput.style.color = 'black';
     }
 }
